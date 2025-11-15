@@ -60,8 +60,8 @@ def main():
     X_val_pca = pca.transform(X_val)
 
   #knn
-    knn = KNN_Model(k=7)
-    logi = LogisticRegressionModel(lr=0.1, epochs=200)
+    knn = KNN_Model(k=5)
+    logi = LogisticRegressionModel(lr=0.2, epochs=400)
     model = StackedModel(knn, logi)
 
     print("Training stacked model...")
